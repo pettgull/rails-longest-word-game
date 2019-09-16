@@ -5,6 +5,7 @@
 
 <form action="/score" method="post">
 <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+<%= hidden_field_tag(:start Time.now) %>
 <input type="text" name="answer">
-<input type="submit" value="Submit answer">
+<input type="submit" value="Submit answer"<%= hidden_field_tag(:end Time.now) %>>
 </form>
